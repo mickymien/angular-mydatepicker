@@ -40,6 +40,11 @@
   animation: myDpViewChangeAnimation 0.2s linear;
 }
 
+.myDpContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes myDpViewChangeAnimation {
   0% {
     transform: scale(0.75);
