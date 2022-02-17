@@ -700,7 +700,8 @@ export class CalendarComponent implements AfterViewInit, OnDestroy {
             markedDate: this.utilService.isMarkedDate(date, this.opts),
             highlight: this.utilService.isHighlightedDate(date, this.opts),
             row: i - 1,
-            col: rtl ? col-- : col++
+            col: rtl ? col-- : col++,
+            dateData:  this.opts.dateData && this.opts.dateData[`${date.day}-${date.month}-${date.year}`] ? this.opts.dateData[`${date.day}-${date.month}-${date.year}`] : null
           }); 
         }
 
@@ -717,7 +718,8 @@ export class CalendarComponent implements AfterViewInit, OnDestroy {
             markedDate: this.utilService.isMarkedDate(date, this.opts),
             highlight: this.utilService.isHighlightedDate(date, this.opts),
             row: i - 1,
-            col: rtl ? col-- : col++
+            col: rtl ? col-- : col++,
+            dateData: this.opts.dateData && this.opts.dateData[`${date.day}-${date.month}-${date.year}`] ? this.opts.dateData[`${date.day}-${date.month}-${date.year}`] : null
           });
           dayNbr++;
         }
@@ -740,7 +742,8 @@ export class CalendarComponent implements AfterViewInit, OnDestroy {
             markedDate: this.utilService.isMarkedDate(date, this.opts),
             highlight: this.utilService.isHighlightedDate(date, this.opts),
             row: i - 1,
-            col: rtl ? col-- : col++
+            col: rtl ? col-- : col++,
+            dateData: this.opts.dateData && this.opts.dateData[`${date.day}-${date.month}-${date.year}`] ? this.opts.dateData[`${date.day}-${date.month}-${date.year}`] : null
           });
           dayNbr++;
         }
