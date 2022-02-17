@@ -1,5 +1,4 @@
 import {IMyDayLabels} from "./my-day-labels.interface";
-import {IMyCalendarDayText} from "./my-calendar-day-text.interface";
 import {IMyMonthLabels} from "./my-month-labels.interface";
 import {IMyDate} from "./my-date.interface";
 import {IMyDateRange} from "./my-date-range.interface";
@@ -63,7 +62,7 @@ export interface IMyOptions {
   divHostElement?: IMyDivHostElement;
   ariaLabelPrevMonth?: string;
   ariaLabelNextMonth?: string;
-  dateData?: IMyCalendarDayText;
+  dateData?: {};
 }
 
 export interface IAngularMyDpOptions extends IMyOptions { }
