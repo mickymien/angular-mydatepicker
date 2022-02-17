@@ -3020,7 +3020,7 @@ class DefaultConfigService {
             divHostElement: { enabled: false, placeholder: "" },
             ariaLabelPrevMonth: "Previous Month",
             ariaLabelNextMonth: "Next Month",
-            dateData: { text: null }
+            dateData: {}
         };
     }
     /**

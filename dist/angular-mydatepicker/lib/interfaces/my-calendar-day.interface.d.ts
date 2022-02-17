@@ -11,5 +11,7 @@ export interface IMyCalendarDay {
     range?: boolean;
     row?: number;
     col?: number;
-    dateData: {};
+    dateData: {
+        text: string;
+    } | null;
 }
